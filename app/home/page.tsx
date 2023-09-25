@@ -1,13 +1,8 @@
-"use client";
-import { Metadata } from "next";
-import { useEffect, useState } from "react";
-import Loader from "../components/UI/Loader/LoaderPage/Loader";
-import HomePage from "./HomePage";
+'use client';
 
-export const metadata: Metadata = {
-	title: "Main | Andrii Nasuschnyi",
-	description: "portfolio Andrii Nasuschnyi",
-};
+import { useEffect, useState } from 'react';
+import Loader from '../components/UI/Loader/LoaderPage/Loader';
+import HomePage from './HomePage';
 
 export default function Home() {
 	const [loading, setLoading] = useState(false);
