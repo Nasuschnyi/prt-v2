@@ -1,0 +1,148 @@
+@import "../styles/variables.scss";
+
+.aside {
+    width: 6%;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background: map-get($color, "primary");
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+}
+
+.nav__link {
+    display: flex;
+    text-transform: uppercase;
+    color: map-get($color, "dark");
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    @extend %transition;
+    padding: 15px 0;
+
+    &:is(:hover, :focus) {
+        color: map-get($hover, "gray");
+    }
+}
+
+.copyright {
+    text-align: center;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    padding: 30px 0;
+    white-space: nowrap;
+    color: map-get($color, "dark");
+    font-size: 10px;
+}
+
+.about {
+    background: map-get($color, "primary");
+}
+
+.main {
+    width: 100%;
+    padding: 5% 0 15px;
+    overflow: auto;
+}
+
+.head {
+    position: relative;
+    max-width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title {
+    position: relative;
+    margin: auto 0 auto auto;
+    font-family: "Monoton", cursive;
+    font-size: 10vw;
+    z-index: 1;
+    animation: about-title-anim 0.7s ease-in-out;
+    @extend %transition;
+}
+
+.pic {
+    max-height: 380px;
+    max-width: 280px;
+    animation: img-anim 0.3s ease-out;
+}
+
+.img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.3);
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 55%;
+}
+
+.quote {
+    position: relative;
+    z-index: 1;
+    font-size: max(3vw, 22px);
+    animation: contact-title-anim 1s ease-out;
+}
+
+.text {
+    line-height: 2rem;
+}
+
+@include desktop-big {
+    .aside {
+        width: 100px;
+    }
+
+    .desc {
+        width: 70%;
+    }
+}
+
+@include mobile {
+    .aside {
+        flex-direction: row;
+        width: 100%;
+        padding: 5px 15px;
+
+        &__wrap {
+            align-items: flex-start;
+            flex-direction: row;
+        }
+    }
+
+    .nav {
+        padding: 5px;
+        margin: auto 10px;
+
+        &__link {
+            writing-mode: initial;
+            transform: rotate(0);
+        }
+    }
+
+    .copyright {
+        writing-mode: initial;
+        transform: rotate(0);
+        padding: 0;
+    }
+
+    .main {
+        padding: 15px;
+    }
+
+    .desc {
+        width: 100%;
+        gap: 10px;
+    }
+}

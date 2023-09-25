@@ -1,0 +1,133 @@
+@import "./variables.scss";
+
+.body {
+    min-width: 320px;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    background: map-get($color, "primary");
+    color: map-get($color, "dark");
+}
+
+@include desktop {
+    .about {
+        &__img {
+            transform: scale(1.2);
+        }
+
+        &__desc {
+            max-width: 75%;
+        }
+    }
+
+    .menu__link::after {
+        height: 0.5vh;
+    }
+}
+
+@include laptop {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 30px;
+        width: 100%;
+        justify-content: flex-end;
+
+        &-desc {
+            font-size: 14px;
+        }
+    }
+
+    .work {
+        grid-template-columns: 1fr;
+
+        &__page {
+            padding: 5%;
+        }
+
+        &__title {
+            margin: 0 0 5% 0;
+        }
+
+        &__text {
+            margin: 0;
+        }
+    }
+
+    .about {
+        &__desc {
+            max-width: 90%;
+            padding: 0 0 3% 0;
+        }
+    }
+
+    .btn {
+        padding: 30px;
+    }
+}
+
+@include tablet {
+    .about__maine {
+        padding: 3% 0% 0% 0%;
+    }
+}
+
+@include mobile {
+    .body {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .nav {
+        &__link {
+            writing-mode: initial;
+            transform: rotate(0);
+        }
+    }
+
+    .about {
+        &__main {
+            padding: 15px;
+        }
+
+        &__desc {
+            max-width: 100%;
+        }
+    }
+
+    .contact {
+        &__wrap {
+            justify-content: start;
+        }
+
+        &__content {
+            height: 100%;
+        }
+
+        &__desc {
+            flex-wrap: wrap;
+
+            &:last-child {
+                height: 100%;
+            }
+
+            & .socials {
+                flex-direction: column;
+                height: 100%;
+
+                &__item::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .full-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/variables.scss";
+
+.line {
+    width: 1px;
+    height: 20%;
+    background: map-get($color, "red");
+}
+
+@include mobile {
+    .line {
+        display: none;
+        /* margin: auto 30% auto 5%;
+        width: 90%;
+        height: 1px; */
+    }
+}

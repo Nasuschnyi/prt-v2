@@ -1,0 +1,91 @@
+@import "../styles/variables.scss";
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-items: center;
+    overflow: auto;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 70vh 30px 30px;
+    animation: content-anim 0.8s ease-out;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menu {
+    height: 100%;
+}
+
+.list {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 5% 0;
+    font-family: "Monoton", cursive;
+    font-size: 12vw;
+    padding: 15px;
+}
+
+.link {
+    position: relative;
+    display: flex;
+    width: min-content;
+    color: map-get($color, "dark");
+    @extend %transition;
+    animation: menu-link-anim 0.6s ease-in-out;
+
+    &:is(:hover, :focus) {
+        &::after {
+            transform: scale(1);
+            @extend %transition;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        height: 0.8vh;
+        background: map-get($color, "red");
+        transform: scale(0);
+        @extend %transition;
+    }
+}
+
+@include desktop {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
+
+@include tablet {
+    .content {
+        padding: 15px 15px 0;
+        gap: 5px;
+    }
+}

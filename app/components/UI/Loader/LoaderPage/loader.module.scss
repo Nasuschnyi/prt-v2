@@ -1,0 +1,21 @@
+.loader {
+    &__page {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: #1a1818;
+        transition: all 0.3s ease;
+        animation: loading-anim 1s ease-in-out;
+    }
+}
+
+@keyframes loading-anim {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}

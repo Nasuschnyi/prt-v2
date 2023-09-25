@@ -1,0 +1,18 @@
+@import "../../../styles/variables.scss";
+
+.logo {
+    display: flex;
+    width: 100%;
+
+    svg {
+        fill: map-get($color, "red");
+        filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.7));
+    }
+}
+
+@include mobile {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+}

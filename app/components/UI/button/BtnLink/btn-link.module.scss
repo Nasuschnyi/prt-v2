@@ -1,0 +1,127 @@
+@import "../../../../styles/variables.scss";
+
+.btn {
+    display: flex;
+    width: min-content;
+    color: map-get($color, "dark");
+    padding: 40px;
+    margin: 5px;
+    position: relative;
+    letter-spacing: 1px;
+    animation: bottom-anim 0.7s ease-out;
+
+    &:is(:hover, :focus) {
+        .circle {
+            transform: scale(0);
+        }
+
+        .white__circle {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .text {
+            transform: translate(40px, -50%);
+        }
+    }
+}
+
+.circle,
+.text,
+.white__circle {
+    position: absolute;
+}
+
+.white__circle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: map-get($color, "dark");
+    display: flex;
+    transition: 0.3s ease-in-out;
+
+    svg {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        fill: map-get($color, "red");
+    }
+}
+
+.text {
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 2;
+    padding: 24px 8px;
+    transition: 0.3s linear;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.circle {
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 100%;
+    width: 100%;
+    box-shadow: 0 0 1px 1px map-get($color, "red");
+    transition: 0.3s linear;
+    border: 2px solid map-get($color, "red");
+}
+
+@include laptop {
+    .btn {
+        padding: 30px;
+
+        &:is(:hover, :focus) {
+            .text {
+                transform: translate(30px, -50%);
+            }
+        }
+    }
+
+    .white__circle {
+        width: 60px;
+        height: 60px;
+
+        & svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .text {
+        font-size: 20px;
+        padding: 19px 8px;
+    }
+}
+
+@include mobile {
+    .btn {
+        padding: 25px;
+
+        &:is(:hover, :focus) {
+            .text {
+                transform: translate(20px, -50%);
+            }
+        }
+    }
+
+    .white__circle {
+        width: 50px;
+        height: 50px;
+
+        & svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 15px 8px;
+    }
+}
