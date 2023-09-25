@@ -36,7 +36,7 @@ export default function AboutPage() {
 				</section>
 				<section className={style.desc}>
 					<h2 className={style.quote}>
-						I'm Andrii N. a developer and problem solver.
+						I&apos;m Andrii N. a developer and problem solver.
 					</h2>
 					<Accordion />
 					<BtnLink />
