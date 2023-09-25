@@ -32,7 +32,6 @@ const WorkPageSwiper = () => {
 				loop={true}
 				mousewheel={true}
 				modules={[Mousewheel]}
-				centeredSlides={true}
 			>
 				{/* {items.map((items) => (
 					<SwiperSlide>
@@ -129,7 +128,7 @@ const WorkPageSwiper = () => {
 								alt="image"
 							/>
 						</div>
-						<h3 className={style.heading}>Kam6io</h3>
+						<h3 className={style.heading}>Kambio</h3>
 						<div className={style.desc}>
 							<p>Low-rise construction plant</p>
 							<p>#landing page</p>

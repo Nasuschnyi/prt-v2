@@ -1,7 +1,7 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import PercentLoader from "./components/UI/Loader/PercentLoader/PercentLoader";
-import Home from "./home/page";
+'use client';
+import React, { useState, useEffect } from 'react';
+import PercentLoader from './components/UI/Loader/PercentLoader/PercentLoader';
+import Home from './home/page';
 
 const StartApp: React.FC = () => {
 	const [loading, setLoading] = useState(true);
@@ -9,7 +9,7 @@ const StartApp: React.FC = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setPercent((prevPercent) => prevPercent + 4);
+			setPercent((prevPercent) => prevPercent + 9);
 		}, 100);
 
 		if (percent >= 100) {
