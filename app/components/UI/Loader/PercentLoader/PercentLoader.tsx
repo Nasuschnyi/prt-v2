@@ -1,4 +1,4 @@
-import styles from "./percentLoader.module.scss";
+import styles from './percentLoader.module.scss';
 
 interface PercentLoaderProps {
 	percent: number;
@@ -14,6 +14,7 @@ const PercentLoader: React.FC<PercentLoaderProps> = ({ percent }) => {
 					style={{ width: `${percent}%` }}
 				></div>
 			</div>
+			<span className={styles.loading}>loading...</span>
 		</div>
 	);
 };

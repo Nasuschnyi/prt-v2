@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/hooks/Timeout.jsx", "app/components/UI/Loader/LoaderPage/Loader.tsx", "app/components/UI/Slider/SwiperPages.tsx", "app/work/WorkPageSwiper/WorkPageSwiper.jsx", "app/work/WorkPage.jsx",],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts",],
   "exclude": ["node_modules"]
 }
