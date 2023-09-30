@@ -118,7 +118,7 @@
     gap: 15px;
     padding: 5%;
     font-size: 18px;
-    color: map-get($color, "primary");
+    color: map-get($color, "white");
     transform: scale(0);
     @extend %transition;
 }
