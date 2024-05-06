@@ -15,6 +15,7 @@ const WorkPageSwiper = () => {
 				spaceBetween={30}
 				loop={true}
 				mousewheel={true}
+				modules={[Mousewheel]}
 			>
 				{items.map((item) => (
 					<SwiperSlide key={item.id}>
