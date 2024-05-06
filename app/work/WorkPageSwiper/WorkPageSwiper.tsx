@@ -15,7 +15,6 @@ const WorkPageSwiper = () => {
 				spaceBetween={30}
 				loop={true}
 				mousewheel={true}
-				modules={[Mousewheel]}
 			>
 				{items.map((item) => (
 					<SwiperSlide key={item.id}>
@@ -29,12 +28,13 @@ const WorkPageSwiper = () => {
 									src={item.image}
 									className={style.img}
 									alt={item.imgAlt}
+									priority
 								/>
 							</figure>
 							<h3 className={style.heading}>{item.title}</h3>
 							<div className={style.desc}>
 								<p>{item.desc}</p>
-								<p>{item.hashtag}</p>
+								<span>{item.hashtag}</span>
 							</div>
 						</Link>
 					</SwiperSlide>
