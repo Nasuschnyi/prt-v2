@@ -3,7 +3,7 @@ const WorkItems = [
 		id: 1,
 		image: require('../../images/work/bathroom.jpg'),
 		imgAlt: 'image',
-		href: 'https://perfekto.vercel.app',
+		href: 'https://www.perfekt-plumb.com',
 		title: 'Perfekt',
 		desc: 'Online store',
 		hashtag: '#single page application',
