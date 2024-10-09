@@ -4,6 +4,7 @@ import { Logo } from '../components/UI/Logo/Logo';
 import style from './contact.module.scss';
 import { Line } from '../components/UI/line/Line';
 import Copyright from '../components/copyright/Copyright';
+import HeroImage from '../components/UI/HeroImage/HeroImage';
 
 const ContactPage = () => {
 	const [links] = useState([
@@ -35,7 +36,10 @@ const ContactPage = () => {
 				<div className={style.aside__wrap}>
 					<Logo />
 					<nav className={style.nav}>
-						<Link href="/home" className={style.nav__link}>
+						<Link
+							href="/home"
+							className={style.nav__link}
+						>
 							home
 						</Link>
 					</nav>
@@ -65,7 +69,10 @@ const ContactPage = () => {
 							On the internet:
 							<ul className={style.socials}>
 								{links.map((links) => (
-									<li className={style.item} key={links.id}>
+									<li
+										className={style.item}
+										key={links.id}
+									>
 										<Link
 											className={style.link}
 											target="_blank"
@@ -81,6 +88,7 @@ const ContactPage = () => {
 						</div>
 					</div>
 				</section>
+				{/* <HeroImage /> */}
 			</main>
 		</>
 	);

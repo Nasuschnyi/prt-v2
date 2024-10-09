@@ -1,171 +1,172 @@
-@import "../styles/variables.scss";
+@import '../styles/variables.scss';
 
 .aside {
-    width: 6%;
-    @extend %flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    background: map-get($color, "dark");
+	width: 6%;
+	@extend %flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 15px;
+	background: map-get($color, 'dark');
 
-    &__wrap {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-    }
+	&__wrap {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+	}
 }
 
 .nav {
-    display: flex;
-    text-transform: uppercase;
-    writing-mode: tb-rl;
-    transform: rotate(180deg);
-    padding: 15px 0;
+	display: flex;
+	text-transform: uppercase;
+	writing-mode: tb-rl;
+	transform: rotate(180deg);
+	padding: 15px 0;
 
-    &__link {
-        color: map-get($color, "primary");
-        @extend %transition;
+	&__link {
+		color: map-get($color, 'primary');
+		@extend %transition;
 
-        &:is(:hover, :focus) {
-            color: map-get($hover, "gray");
-        }
-    }
+		&:is(:hover, :focus) {
+			color: map-get($hover, 'gray');
+		}
+	}
 }
 
 .main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background: map-get($color, "dark");
-    color: map-get($color, "primary");
+	display: flex;
+	width: 100%;
+	height: 100%;
+	color: map-get($color, 'primary');
+	background: url('../images/hero/hero-image.png') top right / contain
+			no-repeat,
+		map-get($color, 'dark');
 
-    & .abbr-title {
-        display: none;
-    }
+	& .abbr-title {
+		display: none;
+	}
 }
 
 .wrap {
-    padding: 5%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 50px;
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 50px;
 }
 
 .title {
-    position: relative;
-    font-family: "Monoton", cursive;
-    font-weight: 400;
-    font-size: 10vw;
-    animation: contact-title-anim 1s ease-out;
+	position: relative;
+	font-family: 'Monoton', cursive;
+	font-weight: 400;
+	font-size: 10vw;
+	animation: contact-title-anim 1s ease-out;
 }
 
 .content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: map-get($color, "dark");
-    padding: 30px 0 10vw 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 30px 0 10vw 0;
 }
 
 .mail {
-    color: map-get($color, "primary");
-    border-bottom: 1px solid map-get($color, "primary");
-    margin: 0 0 0 10px;
-    padding: 0 0 2px 0;
-    @extend %transition;
+	color: map-get($color, 'primary');
+	border-bottom: 1px solid map-get($color, 'primary');
+	margin: 0 0 0 10px;
+	padding: 0 0 2px 0;
+	@extend %transition;
 
-    &:is(:hover, :focus) {
-        color: map-get($hover, "gray");
-        border-bottom: 1px solid map-get($hover, "gray");
-    }
+	&:is(:hover, :focus) {
+		color: map-get($hover, 'gray');
+		border-bottom: 1px solid map-get($hover, 'gray');
+	}
 }
 
 .desc {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }
 
 .socials {
-    @extend %flex;
-    gap: 10px;
+	@extend %flex;
+	gap: 10px;
 }
 
 .item {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 
-    &::after {
-        content: "/";
-        display: flex;
-        padding: 0 0 0 10px;
-    }
+	&::after {
+		content: '/';
+		display: flex;
+		padding: 0 0 0 10px;
+	}
 
-    &:last-child {
-        &::after {
-            display: none;
-        }
-    }
+	&:last-child {
+		&::after {
+			display: none;
+		}
+	}
 }
 
 .link {
-    color: map-get($color, "primary");
-    padding: 10px;
-    border-bottom: 1px solid map-get($color, "primary");
-    padding: 0 0 2px 0;
-    @extend %transition;
+	color: map-get($color, 'primary');
+	padding: 10px;
+	border-bottom: 1px solid map-get($color, 'primary');
+	padding: 0 0 2px 0;
+	@extend %transition;
 
-    &:is(:hover, :focus) {
-        color: map-get($hover, "gray");
-        border-bottom: 1px solid map-get($hover, "gray");
-    }
+	&:is(:hover, :focus) {
+		color: map-get($hover, 'gray');
+		border-bottom: 1px solid map-get($hover, 'gray');
+	}
 }
 
 @include mobile {
-    .aside {
-        flex-direction: row;
-        width: 100%;
-        padding: 5px 15px;
+	.aside {
+		flex-direction: row;
+		width: 100%;
+		padding: 5px 15px;
 
-        &__wrap {
-            align-items: flex-start;
-            flex-direction: row;
-        }
-    }
+		&__wrap {
+			align-items: flex-start;
+			flex-direction: row;
+		}
+	}
 
-    .nav {
-        padding: 5px;
-        margin: auto 10px;
-        transform: rotate(0);
-    }
+	.nav {
+		padding: 5px;
+		margin: auto 10px;
+		transform: rotate(0);
+	}
 
-    .nav__link {
-        writing-mode: initial;
-    }
+	.nav__link {
+		writing-mode: initial;
+	}
 
-    .desc {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+	.desc {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 
-    .mail {
-        font-size: 18px;
-    }
+	.mail {
+		font-size: 18px;
+	}
 
-    .socials {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        font-size: 18px;
-    }
+	.socials {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+		font-size: 18px;
+	}
 
-    .item {
-        &::after {
-            display: none;
-        }
-    }
+	.item {
+		&::after {
+			display: none;
+		}
+	}
 }
