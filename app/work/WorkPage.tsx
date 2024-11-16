@@ -12,7 +12,10 @@ const WorkPage = () => {
 				<div className={style.wrap}>
 					<Logo />
 					<nav className={style.nav}>
-						<Link href="/home" className={style.nav__link}>
+						<Link
+							href="/home"
+							className={style.nav__link}
+						>
 							home
 						</Link>
 					</nav>
@@ -20,16 +23,19 @@ const WorkPage = () => {
 				</div>
 				<Copyright />
 			</aside>
-			<main id="top" className={style.work}>
+			<main
+				id="top"
+				className={style.work}
+			>
 				<section className={style.wrapper}>
 					<div className={style.page}>
 						<h2 className={style.title}>work</h2>
-						<p className={style.text}>Welcome to my works!</p>
+						<p className={style.text}>Welcome to My Works!</p>
 						<p className={style.text}>
-							Join me on this journey of pushing the boundaries in
-							frontend development, as I continuously learn and
-							grow to stay ahead in the ever-evolving world of
-							digital design.
+							Discover projects where creativity meets
+							functionality. Each showcases my expertise in
+							crafting user-focused, high-performance web
+							applications. Let’s innovate together!
 						</p>
 					</div>
 				</section>

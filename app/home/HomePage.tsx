@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Aside } from '../components/aside/Aside';
 import style from './home.module.scss';
-import HeroImage from '../components/UI/HeroImage/HeroImage';
 
 export default function HomePage() {
 	return (
@@ -10,9 +9,12 @@ export default function HomePage() {
 			<main className={style.home}>
 				<article className={style.content}>
 					<h1 className={style.title}>Andrii Nasuschnyi</h1>
-					<p className="subtitle">Front-end Developer</p>
 					<p className="subtitle">
-						Seeking collaboration for development
+						Front-end Developer | Crafting Exceptional Web
+						Experiences
+					</p>
+					<p className="subtitle">
+						Open to Collaborate on Innovative Projects
 					</p>
 				</article>
 				<nav className={style.menu}>

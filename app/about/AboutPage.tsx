@@ -14,7 +14,10 @@ export default function AboutPage() {
 				<div className={style.aside__wrap}>
 					<Logo />
 					<nav className={style.nav}>
-						<Link href="/home" className={style.nav__link}>
+						<Link
+							href="/home"
+							className={style.nav__link}
+						>
 							home
 						</Link>
 					</nav>
@@ -36,7 +39,8 @@ export default function AboutPage() {
 				</section>
 				<section className={style.desc}>
 					<h2 className={style.quote}>
-						I&apos;m Andrii N. a developer and problem solver.
+						I&apos;m Andrii N. – Crafting Solutions, One Line of
+						Code at a Time
 					</h2>
 					<Accordion />
 					<BtnLink />

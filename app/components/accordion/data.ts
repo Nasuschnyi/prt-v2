@@ -1,51 +1,51 @@
 const accordionData = [
 	{
 		id: 1,
-		title: 'As a Front-end Developer',
+		title: 'Core Skills',
 		content:
-			'I possess a diverse skill set and expertise in HTML5 / CSS3 / SCSS / Sass / JavaScript / Git / BEM / React and Next.js, TypeScript. With my proficiency in these technologies, I create visually appealing and responsive web applications while adhering to industry standards.',
+			'HTML5, CSS3, SCSS, Sass, JavaScript, TypeScript, React, Next.js, Git, GitHub.',
 	},
 	{
 		id: 2,
-		title: 'My knowledge',
+		title: 'Frameworks and Libraries',
 		content:
-			'of HTML5 and CSS3 enables me to build structured and visually captivating web pages, leveraging the latest semantic elements and CSS properties. I am well-versed in SCSS, Sass, allowing me to develop modular and reusable styles, facilitating efficient and streamlined development processes.',
+			'Proficient in React and Next.js, leveraging component-based architecture, server-side rendering, and optimization techniques.',
 	},
 	{
 		id: 3,
-		title: 'Proficient in JavaScript',
+		title: 'API Integration',
 		content:
-			'I implement dynamic functionalities on the client-side, ensuring smooth interactivity and seamless integration with APIs. Git is an essential tool in my toolkit, empowering me to manage version control and collaborate effectively with other developers.',
+			'Skilled in working with JSON and REST APIs for seamless data integration.',
 	},
 	{
 		id: 4,
-		title: 'I embrace the BEM',
+		title: 'Methodologies and Best Practices',
 		content:
-			'(Block-Element-Modifier) methodology, ensuring clean and maintainable code structure, which promotes scalability and reusability across projects. Furthermore, my experience in React and Next.js enables me to build robust and performant web applications, leveraging their component-based architecture, server-side rendering, and optimization techniques.',
+			'Expert in BEM methodology, SEO techniques, responsive design principles, and adhering to W3C standards.',
 	},
 	{
 		id: 5,
-		title: 'Moreover',
+		title: 'Web Performance Optimization',
 		content:
-			'I am well-versed in Search Engine Optimization (SEO) techniques, adhering to W3C standards, and ensuring cross-browser and cross-device compatibility. By following best practices and employing responsive design principles, I create web applications that are highly visible to search engines, deliver an excellent user experience, and seamlessly function across different browsers and devices.',
+			'Experienced in code splitting, lazy loading, and utilizing performance analysis tools to optimize load times.',
 	},
 	{
 		id: 6,
-		title: 'Experience with Testing and Debugging',
+		title: 'Testing and Debugging',
 		content:
-			'I have experience with various testing and debugging tools, which helps me to ensure the quality of my code and deliver bug-free applications.',
+			'Hands-on experience with various testing and debugging tools to ensure code quality and deliver bug-free applications.',
 	},
 	{
 		id: 7,
-		title: 'Understanding of Web Performance',
+		title: 'Collaboration and Communication',
 		content:
-			'I understand the importance of web performance and follow best practices to optimize load times and improve the user experience. This includes techniques such as code splitting, lazy loading, and using performance analysis tools.',
+			'Strong teamwork skills with experience in diverse teams, using collaboration tools, and ensuring clear and effective communication.',
 	},
 	{
 		id: 8,
-		title: 'Collaboration and Communication',
+		title: 'Back-end Knowledge',
 		content:
-			'I value collaboration and have experience working in diverse teams. I am comfortable using collaboration tools and platforms, and I believe in clear and effective communication to ensure everyone is on the same page.',
+			'Proficient in Node.js, enabling efficient handling of server-side logic.',
 	},
 ];
 

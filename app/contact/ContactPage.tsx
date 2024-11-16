@@ -4,7 +4,6 @@ import { Logo } from '../components/UI/Logo/Logo';
 import style from './contact.module.scss';
 import { Line } from '../components/UI/line/Line';
 import Copyright from '../components/copyright/Copyright';
-import HeroImage from '../components/UI/HeroImage/HeroImage';
 
 const ContactPage = () => {
 	const [links] = useState([
@@ -88,7 +87,6 @@ const ContactPage = () => {
 						</div>
 					</div>
 				</section>
-				{/* <HeroImage /> */}
 			</main>
 		</>
 	);
