@@ -3,7 +3,7 @@ const WorkItems = [
 		id: 1,
 		image: require('../../images/work/bathroom.jpg'),
 		imgAlt: 'perfekt-plumb logo',
-		href: 'https://www.perfekt-plumb.com',
+		href: 'https://www.perfekt-plumb.company',
 		title: 'Perfekt',
 		desc: 'Online store',
 		hashtag: '##SinglePageApplication',
