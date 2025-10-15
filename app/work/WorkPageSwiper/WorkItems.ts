@@ -6,7 +6,7 @@ const WorkItems = [
 		href: 'https://www.perfekt-plumb.company',
 		title: 'Perfekt',
 		desc: 'Online store',
-		hashtag: '##SinglePageApplication',
+		hashtag: '#SinglePageApplication',
 	},
 	{
 		id: 2,
