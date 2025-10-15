@@ -41,7 +41,7 @@ const WorkItems = [
 		imgAlt: 'lit-inn logo',
 		href: 'https://lit-inn.com',
 		title: 'LIT-INN',
-		desc: 'LIT-INN is more than hotel',
+		desc: 'LIT-INN is more than hotel.',
 		hashtag: '#LandingPage',
 	},
 	{
